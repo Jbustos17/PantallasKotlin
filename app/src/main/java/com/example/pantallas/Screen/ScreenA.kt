@@ -31,7 +31,7 @@ fun ScreenA(navController: NavController, viewModel: PersonaViewModel) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            // ✅ Logo centrado
+
             Image(
                 painter = painterResource(id = R.drawable.logo),
                 contentDescription = "Logo Uniminuto",
@@ -40,7 +40,7 @@ fun ScreenA(navController: NavController, viewModel: PersonaViewModel) {
                     .height(120.dp)
             )
 
-            // ✅ Campos de texto
+
             OutlinedTextField(
                 value = nombre,
                 onValueChange = { nombre = it },
@@ -59,7 +59,7 @@ fun ScreenA(navController: NavController, viewModel: PersonaViewModel) {
                 label = { Text("Profesión") }
             )
 
-            // ✅ Botón con color personalizado
+
             Button(
                 onClick = {
                     val persona = Persona(
